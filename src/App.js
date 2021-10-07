@@ -1,7 +1,5 @@
 import React from 'react';
-import Button from './components/button/button';
 import Todo from './components/todo/todo';
-import './index.css'
 
 function App() {
 
@@ -15,16 +13,14 @@ function App() {
   ]
 
     return (
-      <div>
-        {/* <Button label="Hello" /> */}
+      <>
         {todos.map(todo => {
           return (
             <Todo todo={todo}/>
           )
         })
         }
-
-      </div>
+      </>
     );
 }
 export default App;
